@@ -1,5 +1,6 @@
 /*---------hero section---------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
 html,body{
     margin: 0;
@@ -13,21 +14,24 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
 }
 
 nav{
+    background-color: white;
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
     height: 120px;
+    position: sticky;
+    top: 0;
 }
 
 .logo{
     background-image: url(img/logo.jpg);
-    background-size: contain contain;
+    background-size: cover contain ;
     background-repeat: no-repeat;
     background-position: center;
-    border:solid 1px black;
     flex: 2;
     min-width: 198px;
 }
@@ -35,7 +39,6 @@ nav{
 .options{
     flex: 5;
     display: flex;
-    border:solid 1px black;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
@@ -45,6 +48,7 @@ nav{
 h2{
     font-family: Montserrat;
     margin-right: 8%;
+    font-size: 2vw;
 }
 
 a{
@@ -54,9 +58,9 @@ a{
 }
 
 .menu{
+    padding-top:20px;
     display: flex;
     flex-flow: row nowrap;
-    border:solid 1px black;
     height: 80%;
 }
 
@@ -71,7 +75,6 @@ a{
     background-size:contain ;
     background-repeat: no-repeat;
     background-position: center;
-    border:solid 1px black;
     min-width: 200px;
 }
 
@@ -82,7 +85,6 @@ a{
     background-position: center;
     width: 100%;
     height: 300px;
-    border:solid 1px black;
 }
 
 .buttonbar{
@@ -90,7 +92,6 @@ a{
     height: 100px;
     justify-content: center;
     align-items: center;
-    border:solid 1px black;
 }
 .button{
     flex:2;
@@ -115,8 +116,7 @@ a{
 
 #punch{
     height: 100%;
-    background-image: url(img/hand.jpg);
-    border:solid 1px black;
+    background-image: url(img/hand.png);
     background-size: contain ;
     background-repeat: no-repeat;
     background-position: center;
@@ -127,17 +127,142 @@ a{
 .text{
     
     font-family: Montserrat;
-    padding: 5%;
-    font-size: 2vw;
+    padding: 2rem;
+    font-size: 1.5vw;
     flex:1;
-    border:solid 1px black;
     min-width: 300px;
 }
 
 /*---------biography---------------------*/
 
+.introduction{
+    padding-left: 20px;
+}
+
+.introduction h4{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.introduction legend{
+    padding-top: 0;
+    margin-top: 0;
+    font-family: Unbounded;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+
 #bio{
+    margin-top: 250px;
+    width: 100%;
+    height: 250vh;
+}
+
+.flexdiv{
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.biocolumn{
+    flex:2;
+    height: 100%;
+    background-image: url(img/biograpy.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-width: 150px;
+}
+
+.bioinfo{
+    flex:5;
+    height: 100%;
+}
+
+.textimg1{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.textimg1 .text{
+    flex: 1;
+}
+
+.textimg1 #group{
+    flex: 1;
+    background-image: url(img/group.jpg);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.textimg2{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.textimg2 #sid{
+    flex:1;
+    background-image: url(img/sid.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 200px;
+}
+
+.textimg2 .combined-text{
+    flex:1;
+}
+
+/*---------album---------------------*/
+
+#albumview{
     width: 100%;
     height: 100vh;
 }
 
+.disc{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 80%;
+    padding-top: 100px;
+}
+
+.faces{
+    flex: 1;
+    background-image: url(img/album1.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.music{
+    flex: 3;
+    background-image: url(img/fa3c1d956bd25f1677ad6ad17495949282ec9c1ac9b9be83046e019949a4b976.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.punches{
+    flex: 1;
+    background-image: url(img/album2.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#musicrepro{
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
